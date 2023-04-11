@@ -1,0 +1,130 @@
+{
+	"type": "modal",
+	"title": {
+		"type": "plain_text",
+		"text": "Weather Forecast",
+		"emoji": true
+	},
+	"submit": {
+		"type": "plain_text",
+		"text": "Submit",
+		"emoji": true
+	},
+	"close": {
+		"type": "plain_text",
+		"text": "Cancel",
+		"emoji": true
+	},
+	"blocks": [
+		{
+			"type": "input",
+			"element": {
+				"type": "static_select",
+				"placeholder": {
+					"type": "plain_text",
+					"text": "Select an item",
+					"emoji": true
+				},
+				"options": [
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Berlin",
+							"emoji": true
+						},
+						"value": "Berlin"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "London",
+							"emoji": true
+						},
+						"value": "London"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Havana",
+							"emoji": true
+						},
+						"value": "Havana"
+					}
+				],
+				"action_id": "static_select-action"
+			},
+			"label": {
+				"type": "plain_text",
+				"text": "City",
+				"emoji": true
+			}
+		},
+		{
+			"type": "input",
+			"element": {
+				"type": "static_select",
+				"placeholder": {
+					"type": "plain_text",
+					"text": "Select an item",
+					"emoji": true
+				},
+				"options": [
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "1",
+							"emoji": true
+						},
+						"value": "1"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "2",
+							"emoji": true
+						},
+						"value": "2"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "3",
+							"emoji": true
+						},
+						"value": "3"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "4",
+							"emoji": true
+						},
+						"value": "4"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "5",
+							"emoji": true
+						},
+						"value": "5"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "6",
+							"emoji": true
+						},
+						"value": "6"
+					}
+				],
+				"action_id": "static_select-action"
+			},
+			"label": {
+				"type": "plain_text",
+				"text": "Days",
+				"emoji": true
+			}
+		}
+	]
+}
