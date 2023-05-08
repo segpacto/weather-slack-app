@@ -1,3 +1,8 @@
+/**
+ *
+ * @param {string} bodyPayload
+ * @returns {{trigger_id: string, token: string}}
+ */
 module.exports = (bodyPayload) => {
   if (!bodyPayload || bodyPayload === '') {
     throw new Error('The body payload can not be empty')

@@ -17,12 +17,13 @@
 	},
 	"blocks": [
 		{
+			"block_id": "city_selection",
 			"type": "input",
 			"element": {
 				"type": "static_select",
 				"placeholder": {
 					"type": "plain_text",
-					"text": "Select an item",
+					"text": "Select a city",
 					"emoji": true
 				},
 				"options": [
@@ -49,9 +50,25 @@
 							"emoji": true
 						},
 						"value": "Havana"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Copenhagen",
+							"emoji": true
+						},
+						"value": "Copenhagen"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Brussels",
+							"emoji": true
+						},
+						"value": "Brussels"
 					}
 				],
-				"action_id": "static_select-action"
+				"action_id": "city_selection"
 			},
 			"label": {
 				"type": "plain_text",
@@ -60,12 +77,13 @@
 			}
 		},
 		{
+			"block_id": "forecast_days_selection",
 			"type": "input",
 			"element": {
 				"type": "static_select",
 				"placeholder": {
 					"type": "plain_text",
-					"text": "Select an item",
+					"text": "Select how many days",
 					"emoji": true
 				},
 				"options": [
@@ -92,37 +110,13 @@
 							"emoji": true
 						},
 						"value": "3"
-					},
-					{
-						"text": {
-							"type": "plain_text",
-							"text": "4",
-							"emoji": true
-						},
-						"value": "4"
-					},
-					{
-						"text": {
-							"type": "plain_text",
-							"text": "5",
-							"emoji": true
-						},
-						"value": "5"
-					},
-					{
-						"text": {
-							"type": "plain_text",
-							"text": "6",
-							"emoji": true
-						},
-						"value": "6"
 					}
 				],
-				"action_id": "static_select-action"
+				"action_id": "forecast_days_selection"
 			},
 			"label": {
 				"type": "plain_text",
-				"text": "Days",
+				"text": "Forecast(days)",
 				"emoji": true
 			}
 		}
